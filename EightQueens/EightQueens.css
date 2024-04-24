@@ -1,0 +1,164 @@
+body {
+  background-image: url('bg4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  margin-right: 20px;
+}
+
+.registration-container {
+  margin-left: 20px;
+  background-color: #FF69B4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  background-color: #FF69B4;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 0 #FFC0CB;
+  font-family: 'Abril Fatface', cursive; /* Decorative font for the heading */
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-family: 'Abril Fatface', cursive; /* Apply the same font family to the registration heading */
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  border: 2px solid #333;
+  background-color: #FFE4E1;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: #FFFFFF;
+  border: 1px solid #FFB6C1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.queen {
+  width: 50px;
+  height: 50px;
+  background-image: url('Queen.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #FF69B4;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Raleway', sans-serif;
+}
+
+.registration-container input[type="text"],
+.registration-container button {
+  background-color: #FFB6C1;
+  color: #FFFFFF;
+}
+
+.registration-form button {
+  font-family: 'Abril Fatface', cursive;
+}
+
+button:hover {
+  background-color: #FF1493;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #FFB6C1;
+  border-radius: 4px;
+}
+
+#scores {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#solution {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #663399;
+  font-size: 20px;
+  background-color: pink;
+}
+
+button#playButton {
+  background-color: #FF69B4;
+  color: #FFFFFF;
+  margin-left: 1px;
+}
+
+.registration-form {
+  width: 90%;
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-form input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.registration-form button {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  .registration-container {
+    margin-left: 0;
+  }
+
+  .registration-form {
+    width: 80%;
+  }
+}
